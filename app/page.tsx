@@ -68,6 +68,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Landing Content Section */}
+      <section className="section-padding bg-stone-50">
+        <div className="container-max">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
+              How Mirrorly Works
+            </h2>
+            <p className="text-lg text-stone-600 max-w-2xl mx-auto">
+              Experience the future of online shopping with our AI-powered virtual try-on technology
+            </p>
+          </div>
+          
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+              <img 
+                src="/Landing content.png" 
+                alt="Mirrorly Virtual Try-On Interface" 
+                className="w-full h-auto"
+              />
+            </div>
+            
+            <div className="mt-8 text-center">
+              <p className="text-stone-600 text-lg max-w-3xl mx-auto">
+                Simply right-click on any clothing image you see online, upload your photo, 
+                and watch as our advanced AI technology creates realistic try-on results in seconds. 
+                No more guessing how clothes will look - see it for yourself before you buy!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="section-padding bg-white">
         <div className="container-max">
