@@ -1,9 +1,6 @@
 'use client'
 
-import { useState } from 'react'
-
 export default function Home() {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false)
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-stone-50 to-amber-50">
@@ -160,22 +157,13 @@ export default function Home() {
           
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-stone-100 to-amber-100 flex items-center justify-center">
-                {!isVideoPlaying ? (
-                  <button 
-                    onClick={() => setIsVideoPlaying(true)}
-                    className="w-20 h-20 bg-gradient-to-r from-amber-500 to-amber-600 rounded-full flex items-center justify-center hover:from-amber-600 hover:to-amber-700 transition-all duration-200 shadow-lg"
-                  >
-                    <span className="text-white text-2xl ml-1">▶️</span>
-                  </button>
-                ) : (
-                  <div className="text-center p-8">
-                    <p className="text-stone-600 mb-4">Demo video would be embedded here</p>
-                    <p className="text-sm text-stone-500">
-                      Replace with your actual demo video or screenshots
-                    </p>
-                  </div>
-                )}
+              <div className="aspect-video">
+                <iframe 
+                  src="https://www.loom.com/embed/2c4a829c8ded443c8c5d38d8ee2ad6ec?sid=8b380de6-2e45-493e-97aa-2592b8d77483" 
+                  frameBorder="0" 
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
               </div>
             </div>
           </div>
